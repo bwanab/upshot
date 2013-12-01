@@ -279,6 +279,8 @@
         (fn [g] (-> g .getItems))
         "seq of items to choose from"))])
 
+(defobject slider javafx.scene.control.Slider [control-options] [])
+
 (def labeled-options
   (merge
     control-options
@@ -427,4 +429,3 @@
                  :width 800.0 :height 600.0
                  :fill :black))
       .show)))
-
